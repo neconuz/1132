@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+    mode: 'fade',
+    captions: true,
+  });
+    });
+  </script>
 </head>
 <body background="images/galaksi.jpg">
-    
+    <nav>
          <ul>
         <li><a href="index.html">Anasayfa</a></li>
         <li><a href="Hakkimda.html">Hakkımda</a></li>
         <li><a href="Galeri.html">Galeri</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
+        
+        <li><a href="proje.html">Projelerim</a></li>
     </ul>
+</nav>
+
   <h1>Galeri</h1>
+  <div class="slider">
+   
+    <div><img src="images/ufak nesip.jpeg" width="1000px" height="600px"title="9 Yaşındayken" ></div>
+    <div><img src="images/nesip küçük.jpeg"  width="800px" height="600px" title="12 yaşındayken"></div>
+    <div><img src="images/ufak nesip 2.jpeg" width="1000px" height="600px"title="13 Yaşındayken" ></div>
+    <div><img src="images/2.küçük nesip.jpg"  width="800px" height="600px" title="14 Yaşındayken"></div>
+    <div><img src="images/nesip.jpeg" width="700px" height="600px"title="19 Yaşındayken" ></div>
+</div> 
 </body>
 </html>
